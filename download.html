@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载中心 | SYSTEM-RAMOS-HZK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url('1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 640px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 32px 28px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+        }
+        .back {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .back a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+        .back a:hover {
+            color: #fff;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 28px;
+            letter-spacing: 1px;
+        }
+        .file-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.2s;
+        }
+        .file-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(76, 175, 80, 0.3);
+        }
+        .file-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .file-name {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        .file-meta {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 2px;
+        }
+        .download {
+            background: #4CAF50;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .download:hover {
+            background: #43a047;
+            transform: scale(1.02);
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back">
+            <a href="index.html">← 返回主页</a>
+        </div>
+        <h1 class="title">📦 下载中心</h1>
+
+        <div class="file-item">
+            <div class="file-info">
+                <span class="file-name">Windows 10 22H2 镜像</span>
+                <span class="file-meta">微软官方直链 · 约 5.8 GB</span>
+            </div>
+            <a class="download" href="https://software.download.prss.microsoft.com/dbazure/Win10_22H2_Chinese_Simplified_x64v1.iso?t=3ee9b41f-aec3-417b-b801-fc04c4780879&P1=1779559013&P2=602&P3=2&P4=sKTBg9yzLvTBKWOzQbfvEGcKab0CA0hmNL%2bmFPwR4Vgyk2BsbxAKWXEJNeuZNZWRL3JYYCON%2fgSs8pKxc1lohM8isd%2fPoEM%2fltxZUfQqE2SPtdw%2bP4bBFjeQLqyMoxFc%2flpHYcvkU8RdmVOYneyFDFRfzf4OKApUJkI7sf2JzdjUgJKlCElU5L1aL4OU2tMB6OvYoakiW8QqwSqE2bCYE9rTjLpP9jQWTlMFABy%2fNOp1Ip%2f3Qb4mEEyVNEmVckIIsnocu%2fF1zDXNPiGKjYaFCjOSA9ZTYHSGUsSAA2tZo6smBBMM4IhlwW2Gtunwt%2bHGnMWhcQOVHcwJeQBWxAmnZQ%3d%3d" target="_blank">下载</a>
+        </div>
+
+        <div class="file-item">
+            <div class="file-info">
+                <span class="file-name">Limbo 22H2 魔改版 APK</span>
+                <span class="file-meta">基于 6.2.0 · 优化 VirtIO / 网卡 / 固件</span>
+            </div>
+            <a class="download" href="Windows PC_22H2_src_mod.apk" target="_blank">下载</a>
+        </div>
+
+        <div class="file-item">
+            <div class="file-info">
+                <span class="file-name">SeaBIOS 自定义固件</span>
+                <span class="file-meta">1.17.0-mod · 编译自源码</span>
+            </div>
+            <a class="download" href="seabios-custom.bin" target="_blank">下载</a>
+        </div>
+
+        <div class="file-item">
+            <div class="file-info">
+                <span class="file-name">Devuan 镜像</span>
+                <span class="file-meta">最小安装版 · 约 500 MB</span>
+            </div>
+            <a class="download" href="#" target="_blank">即将开放</a>
+        </div>
+
+        <div class="footer">
+            © 2026 SYSTEM-RAMOS-HZK · 仅供学习参考
+        </div>
+    </div>
+</body>
+</html>
